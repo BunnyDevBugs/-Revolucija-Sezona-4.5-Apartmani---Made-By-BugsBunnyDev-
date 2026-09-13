@@ -14,5 +14,5 @@
 ## 📥 Script Download & Video Preview
 You can download the script directly via GitHub.
 
-
-
+### 📺 Video Preview
+https://github.com/BunnyDevBugs/-Revolucija-Sezona-4.5-Apartmani---Made-By-BugsBunnyDev-/raw/main/compressed_Desktop%2020260913%20-%2020362706_compressed_compressed.mp4
