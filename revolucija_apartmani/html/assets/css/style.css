@@ -1,0 +1,141 @@
+@import 'https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap';
+*{margin:0;padding:0;border:0;outline:0;text-decoration:none;line-height:inherit;vertical-align:inherit;}h1,h2,h3,h4,h5,h6{font-weight:normal;}ul{list-style:none;}
+*{font-family: 'Mulish', sans-serif;}
+
+
+body{
+	/*background-image: url("https://images8.alphacoders.com/135/thumb-1920-1357495.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box{
+	padding: 0.8vw;
+    background: linear-gradient(148deg, rgba(17, 17, 17, 1) 0%, rgb(53 43 17) 100%);
+    min-width: 30vw;
+    border-radius: 0.3vw;
+    box-shadow: 0px 0px 0px 0.15vw #28241a;
+}
+.box .navigacija{
+	display: grid;
+	gap: 0.5vw;
+}
+.box .navigacija .apartman{
+	padding: 0.4vw 0.8vw;
+	background: #876c21;
+	font-weight: 600;
+	font-size: 0.75vw;
+	border-radius: 0.2vw;
+	transition: 0.2s;
+	font-weight: 800;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box .navigacija .apartman:hover, .box .navigacija .apartman.act{
+	background: #C69A1B;
+}
+
+.kontent{
+	box-sizing: border-box;
+	margin-top: 0.5vw;
+	min-height: 10vw;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	gap: 1.0vw;
+}
+.kontent .flexBox.prva{
+	width: 50%;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.5vw;
+	
+}
+.kontent .flexBox.prva p{
+	height: 1.7vw;
+	display: flex;
+	align-items: center;
+	border-radius: 0.2vw;
+	padding: 0vw 0.4vw;
+	background: #876c211c;
+	color: #fff;
+	font-weight: 700;
+	background: linear-gradient(267deg, rgb(255 255 255 / 0%) 0%, rgb(219 202 153 / 11%) 100%);
+}
+.kontent .flexBox.prva p.cijena{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*color: #63ed1f;*/
+}
+.kontent .flexBox.prva p.cijena span{
+	color: #c69a1b;
+}
+.kontent .flexBox.prva p.cijena:after{display: none;}
+.kontent .flexBox.prva p:after {
+    content: "✓";
+    width: 1.2vw;
+    height: 1.2vw;
+    margin-left: 12.5vw;
+    border-radius: 100%;
+    background: linear-gradient(28deg, rgb(27 73 36) 0%, rgb(27 177 49) 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7vw;
+    text-shadow: 0px 0px 0.5vw #000;
+    position: absolute;
+}
+.kontent .flexBox.druga{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+.kontent .flexBox.druga .slika{
+	width: 100%;
+	height: 8.3vw;
+	background: #876c211c;
+	border-radius: 0.3vw;
+}
+.kontent .flexBox.druga .slika img{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.3vw;
+}
+.kontent .flexBox.druga button{
+	width: 100%;
+	height: 1.7vw;
+	margin-top: 0.3vw;
+	border-radius: 0.2vw;
+	font-weight: 800;
+	font-size: 0.8vw;
+	cursor: pointer;
+	background: #C69A1B;
+	transition: 0.2s;
+}
+.kontent .flexBox.druga button:hover{
+	background: #ffd400;
+}
+.overlej{
+	background: #00000090;
+	width: 100vw;
+	z-index: -1;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
